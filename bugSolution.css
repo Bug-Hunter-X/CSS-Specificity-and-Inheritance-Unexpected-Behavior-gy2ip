@@ -1,0 +1,17 @@
+The solution avoids the use of `inherit` and explicitly sets the color to the desired value:
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+div p {
+  color: green;
+}
+```
+
+By explicitly setting the `color` for `div p` to `green`, the specificity issue is resolved, and the expected style is applied.
